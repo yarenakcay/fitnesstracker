@@ -1,0 +1,65 @@
+/* Set the background color and font for the entire body */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gradient background for header section */
+.header-bg {
+  background: linear-gradient(135deg, #3a614d, #9de4b0);
+}
+
+/* Icon animation: bounce effect */
+.bounce-icon {
+  animation: bounce 1s infinite alternate;
+  margin-right: 8px;
+}
+
+/* Define the bounce keyframes */
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
+}
+
+/* Card style for images */
+.img-card {
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Subtle shadow */
+  background-color: white;
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+/* Styling for images inside the card */
+.img-card img {
+  width: 100%; /* Full width */
+  height: 220px; /* Fixed height */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Scale up the card slightly when hovered */
+.img-card:hover {
+  transform: scale(1.03);
+}
+
+/* Style for footer text */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Info card box styling */
+.info-card {
+  background-color: #ffffff;
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Subtle shadow */
+  margin-bottom: 30px;
+}
+
+/* Image styling inside the info card */
+.info-card img {
+  max-width: 100%; /* Responsive width */
+  border-radius: 10px; /* Rounded corners */
+  height: auto;
+  margin-bottom: 15px;
+}
